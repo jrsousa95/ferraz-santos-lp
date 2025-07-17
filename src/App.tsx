@@ -1,6 +1,7 @@
 import { VStack } from "@chakra-ui/react";
 import Header from "./components/header";
 import Presentation from "./components/presentation";
+import { ServicesSection } from "./components/services-section";
 
 // #2a71d8
 // #1c2023
@@ -17,6 +18,8 @@ export default function App() {
       <Header />
 
       <Presentation />
+
+      <ServicesSection />
     </VStack>
   );
 }
