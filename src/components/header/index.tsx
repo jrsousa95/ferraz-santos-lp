@@ -30,6 +30,10 @@ export default function Header() {
           </Breadcrumb.Item>
           <Breadcrumb.Separator> </Breadcrumb.Separator>
           <Breadcrumb.Item>
+            <Breadcrumb.Link href="#areas">Áreas de Atuação</Breadcrumb.Link>
+          </Breadcrumb.Item>
+          <Breadcrumb.Separator> </Breadcrumb.Separator>
+          <Breadcrumb.Item>
             <Breadcrumb.Link href="#about-us">Sobre nós</Breadcrumb.Link>
           </Breadcrumb.Item>
           <Breadcrumb.Separator> </Breadcrumb.Separator>
@@ -44,8 +48,10 @@ export default function Header() {
       </Breadcrumb.Root>
 
       <HStack>
-        <Button colorPalette="green" variant="solid">
-          <MdOutlineWhatsapp /> Fale conosco
+        <Button colorPalette="green" variant="solid" asChild>
+          <a href="https://www.google.com.br/" target="_blank">
+            <MdOutlineWhatsapp /> Fale conosco
+          </a>
         </Button>
       </HStack>
     </HStack>

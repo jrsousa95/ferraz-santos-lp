@@ -64,8 +64,11 @@ export default function Presentation() {
                   transform: "scale(1.1)",
                   transition: "transform 0.3s ease",
                 }}
+                asChild
               >
-                Conversar pelo Whatsapp
+                <a href="https://www.google.com.br/" target="_blank">
+                  Conversar pelo Whatsapp
+                </a>
               </Button>
 
               <Button
@@ -77,7 +80,7 @@ export default function Presentation() {
                 }}
                 asChild
               >
-                <a href="#areas"> Conheça Nossas Áreas</a>
+                <a href="#areas">Conheça Nossas Áreas</a>
               </Button>
             </Stack>
           </VStack>

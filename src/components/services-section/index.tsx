@@ -3,6 +3,7 @@ import {
   Button,
   Card,
   Heading,
+  HStack,
   Icon,
   SimpleGrid,
   Text,
@@ -61,7 +62,7 @@ export function ServicesSection() {
     >
       <VStack gap={{ base: "4", md: "8" }} width="full">
         <Heading fontSize={{ base: "4xl", md: "5xl" }} textAlign="center">
-          Áreas de expertise
+          Áreas de atuação
         </Heading>
 
         <Text fontSize={{ base: "md", md: "xl" }} color="gray.500">
@@ -151,6 +152,18 @@ export function ServicesSection() {
           </motion.div>
         ))}
       </SimpleGrid>
+
+      <Text fontSize={{ base: "md", md: "xl" }} color="gray.500">
+        Precisa de uma consulta personalizada sobre sua situação específica?
+      </Text>
+
+      <HStack>
+        <Button colorPalette="blue" size="lg" width="full" asChild>
+          <a href="https://www.google.com.br/" target="_blank">
+            Agendar Consulta
+          </a>
+        </Button>
+      </HStack>
     </VStack>
   );
 }
