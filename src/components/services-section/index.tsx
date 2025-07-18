@@ -51,7 +51,7 @@ const services = [
   },
 ];
 
-export function ServicesSection() {
+export default function ServicesSection() {
   return (
     <VStack
       id="areas"
@@ -59,13 +59,14 @@ export function ServicesSection() {
       gap={{ base: "4", md: "10" }}
       width="full"
       justifyContent="center"
+      bg="#eaebf080"
     >
-      <VStack gap={{ base: "4", md: "8" }} width="full">
-        <Heading fontSize={{ base: "4xl", md: "5xl" }} textAlign="center">
+      <VStack gap={{ base: "4", md: "8" }} width="full" textAlign="center">
+        <Heading fontSize={{ base: "4xl", md: "5xl" }}>
           Áreas de atuação
         </Heading>
 
-        <Text fontSize={{ base: "md", md: "xl" }} color="gray.500">
+        <Text fontSize={{ base: "md", md: "xl" }} color="gray.500" maxW="700px">
           Oferecemos soluções jurídicas completas para empresas que buscam
           segurança e crescimento sustentável em seus negócios.
         </Text>
@@ -158,7 +159,16 @@ export function ServicesSection() {
       </Text>
 
       <HStack>
-        <Button colorPalette="blue" size="lg" width="full" asChild>
+        <Button
+          colorPalette="blue"
+          size="lg"
+          width="full"
+          _hover={{
+            transform: "scale(1.1)",
+            transition: "transform 0.3s ease",
+          }}
+          asChild
+        >
           <a href="https://www.google.com.br/" target="_blank">
             Agendar Consulta
           </a>

@@ -21,7 +21,11 @@ export default function Header() {
       justifyContent="space-between"
       bg="#eaebf0"
     >
-      <Image src={logo} width="150px" height="40px" />
+      <Image
+        src={logo}
+        width={{ base: "100px", md: "150px" }}
+        height={{ base: "20px", md: "40px" }}
+      />
 
       <Breadcrumb.Root hidden={isMobile}>
         <Breadcrumb.List gap="4" fontSize="md" fontWeight="500">
@@ -48,9 +52,14 @@ export default function Header() {
       </Breadcrumb.Root>
 
       <HStack>
-        <Button colorPalette="green" variant="solid" asChild>
+        <Button
+          colorPalette="green"
+          size={{ base: "sm", md: "md" }}
+          variant="solid"
+          asChild
+        >
           <a href="https://www.google.com.br/" target="_blank">
-            <MdOutlineWhatsapp /> Fale conosco
+            <MdOutlineWhatsapp /> Falar no Whatsapp
           </a>
         </Button>
       </HStack>
