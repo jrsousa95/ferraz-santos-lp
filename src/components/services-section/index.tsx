@@ -19,7 +19,7 @@ const services = [
     description:
       "Planejamento, estruturação e elaboração de contratos para uma organização corporativa sólida e segura.",
     items: [
-      "Constituição de empresas",
+      "Resolução de conflitos",
       "Alterações contratuais",
       "Fusões e aquisições",
       "Planejamento societário",
@@ -145,8 +145,14 @@ export default function ServicesSection() {
                   size="sm"
                   width="full"
                   transition="all 0.7s ease"
+                  asChild
                 >
-                  Ver mais →
+                  <a
+                    href="https://wa.me/message/Y2BY6LNHEASPG1"
+                    target="_blank"
+                  >
+                    Ver mais →
+                  </a>
                 </Button>
               </Card.Footer>
             </Card.Root>
@@ -169,7 +175,7 @@ export default function ServicesSection() {
           }}
           asChild
         >
-          <a href="https://www.google.com.br/" target="_blank">
+          <a href="https://wa.me/message/Y2BY6LNHEASPG1" target="_blank">
             Agendar Consulta
           </a>
         </Button>

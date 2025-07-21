@@ -18,13 +18,15 @@ export default function Header() {
       px="10"
       py="4"
       width="full"
+      position="fixed"
+      zIndex="999"
       justifyContent="space-between"
       bg="#eaebf0"
     >
       <Image
         src={logo}
-        width={{ base: "100px", md: "150px" }}
-        height={{ base: "20px", md: "40px" }}
+        width={{ base: "120px", md: "150px" }}
+        height={{ base: "30px", md: "40px" }}
       />
 
       <Breadcrumb.Root hidden={isMobile}>
@@ -58,7 +60,7 @@ export default function Header() {
           variant="solid"
           asChild
         >
-          <a href="https://www.google.com.br/" target="_blank">
+          <a href="https://wa.me/message/Y2BY6LNHEASPG1" target="_blank">
             <MdOutlineWhatsapp /> Falar no Whatsapp
           </a>
         </Button>

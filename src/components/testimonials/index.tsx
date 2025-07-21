@@ -12,48 +12,48 @@ import {
 import { motion } from "framer-motion";
 import { FaStar } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
-import { PiQuotesBold } from "react-icons/pi";
+import { VscQuote } from "react-icons/vsc";
 
 const testimonials = [
   {
-    name: "Maria Silva",
-    location: "Fortaleza",
-    occupation: "CEO, TechStart Ltda",
+    name: "Javier Gallego",
+    location: "Caucaia",
+    occupation: "Diretor Consórcio, Wai Seta Caucaia",
     testimonial:
       "A Ferraz Santos foi fundamental na estruturação jurídica da nossa startup. Profissionalismo e agilidade que fizeram toda a diferença.",
   },
   {
-    name: "João Oliveira",
-    location: "Sobral",
-    occupation: "Diretor, Construtora Horizonte",
+    name: "Paulo Veras",
+    location: "Fortaleza",
+    occupation: "Gestor, Wai Life Soluções Ambientais",
     testimonial:
       "Excelente assessoria em contratos empresariais. Conseguiram simplificar processos complexos de forma clara e segura.",
   },
   {
-    name: "Ana Costa",
-    location: "Juazeiro do Norte",
-    occupation: "Sócia, Clínica MedCare",
+    name: "Iran Capistrano",
+    location: "Fortaleza",
+    occupation: "Capistrano Atacarejo",
     testimonial:
       "Suporte jurídico completo durante nossa expansão. Equipe dedicada e sempre disponível para esclarecer dúvidas.",
   },
   {
-    name: "Carlos Santos",
-    location: "Quixadá",
-    occupation: "Fundador, Agro Nordeste",
+    name: "⁠Fernando Ferreira",
+    location: "Fortaleza",
+    occupation: "FJ Motos e Carros",
     testimonial:
       "Prevenção de conflitos que nos poupou tempo e dinheiro. Recomendo para qualquer empresário que busca segurança jurídica.",
   },
   {
-    name: "Luiza Mendes",
+    name: "⁠Joeliton Fialho",
     location: "Fortaleza",
-    occupation: "Diretora, Rede Varejo Plus",
+    occupation: "JF Frontais",
     testimonial:
       "Reestruturação societária conduzida com excelência. Processo transparente e resultados acima das expectativas.",
   },
   {
-    name: "Pedro Rocha",
-    location: "Sobral",
-    occupation: "CEO, LogiTrans",
+    name: "⁠Fernando Rodrigues",
+    location: "Fortaleza",
+    occupation: "Doce Solero Representações",
     testimonial:
       "Parceria de longo prazo que nos dá confiança para tomar decisões estratégicas. Assessoria jurídica de primeira qualidade.",
   },
@@ -107,7 +107,7 @@ export default function Testimonials() {
                   display="flex"
                   alignItems="center"
                 >
-                  <Icon as={PiQuotesBold} boxSize={12} color="#2a71d8" />
+                  <Icon as={VscQuote} boxSize={8} color="#2a71d8" />
                   <Box>
                     <Icon as={FaStar} boxSize={4} color="yellow.400" />
                     <Icon as={FaStar} boxSize={4} color="yellow.400" />

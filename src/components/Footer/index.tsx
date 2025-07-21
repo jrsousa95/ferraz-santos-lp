@@ -57,11 +57,11 @@ export default function Footer() {
           <Text fontWeight="bold">Contato</Text>
           <HStack>
             <Icon as={MdOutlineWhatsapp} boxSize={4} />
-            <Text>(85) 9 9999-9999</Text>
+            <Text>(85) 9 8941-1075</Text>
           </HStack>
           <HStack>
             <Icon as={FiMail} boxSize={4} />
-            <Text>contato@ferrazsantos.adv.br</Text>
+            <Text>contatoferrazsantos@gmail.com</Text>
           </HStack>
           <HStack>
             <Icon as={FaClock} boxSize={4} />
@@ -72,14 +72,16 @@ export default function Footer() {
         {/* Coluna 3 - Onde Atuamos */}
         <VStack align="flex-start" gap={3} flex={1}>
           <Text fontWeight="bold">Onde Atuamos</Text>
-          {["Fortaleza", "Sobral", "Juazeiro do Norte", "Quixadá"].map(
-            (city) => (
-              <HStack key={city}>
-                <Icon as={FaLocationDot} boxSize={4} />
-                <Text>{city}</Text>
-              </HStack>
-            )
-          )}
+          {[
+            "Fortaleza e Região Metropolitana",
+            "Sobral, Juazeiro do Norte",
+            "Quixadá",
+          ].map((city) => (
+            <HStack key={city}>
+              <Icon as={FaLocationDot} boxSize={4} />
+              <Text>{city}</Text>
+            </HStack>
+          ))}
         </VStack>
       </Flex>
 
@@ -93,7 +95,18 @@ export default function Footer() {
           fontSize="sm"
         >
           <Text>
-            © 2024 Ferraz Santos Advogados. Todos os direitos reservados.
+            © 2025 Ferraz Santos Advogados. Todos os direitos reservados.
+          </Text>
+          <Text>
+            Desenvolvido por:{" "}
+            <Link
+              color="white"
+              _hover={{ textDecoration: "underline" }}
+              target="_blank"
+              href="https://www.linkedin.com/in/eudes-jr/"
+            >
+              Eudes Junior
+            </Link>
           </Text>
           <HStack gap={4} mt={{ base: 2, md: 0 }}>
             <Link

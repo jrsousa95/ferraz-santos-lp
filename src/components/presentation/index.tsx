@@ -66,7 +66,7 @@ export default function Presentation() {
                 }}
                 asChild
               >
-                <a href="https://www.google.com.br/" target="_blank">
+                <a href="https://wa.me/message/Y2BY6LNHEASPG1" target="_blank">
                   Conversar pelo Whatsapp
                 </a>
               </Button>

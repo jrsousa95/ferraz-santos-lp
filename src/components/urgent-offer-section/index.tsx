@@ -60,10 +60,10 @@ export default function UrgentOfferSection() {
             flex="1"
           >
             <HStack gap={2} mb={2}>
-              <Box color="yellow.500">
+              <Box color="yellow.400">
                 <GoAlertFill fontSize={32} />
               </Box>
-              <Text fontWeight="bold" color="red.300">
+              <Text fontWeight="bold" color="yellow.400">
                 Sem Contratos
               </Text>
             </HStack>
@@ -81,10 +81,10 @@ export default function UrgentOfferSection() {
             flex="1"
           >
             <HStack gap={2} mb={2}>
-              <Box color="yellow.500">
+              <Box color="yellow.400">
                 <GoAlertFill fontSize={32} />
               </Box>
-              <Text fontWeight="bold" color="red.300">
+              <Text fontWeight="bold" color="yellow.400">
                 Estrutura Frágil
               </Text>
             </HStack>
@@ -102,10 +102,10 @@ export default function UrgentOfferSection() {
             flex="1"
           >
             <HStack gap={2} mb={2}>
-              <Box color="yellow.500">
+              <Box color="yellow.400">
                 <GoAlertFill fontSize={32} />
               </Box>
-              <Text fontWeight="bold" color="red.300">
+              <Text fontWeight="bold" color="yellow.400">
                 Sem Prevenção
               </Text>
             </HStack>
@@ -146,8 +146,11 @@ export default function UrgentOfferSection() {
                 transform: "scale(1.1)",
                 transition: "transform 0.3s ease",
               }}
+              asChild
             >
-              <FaWhatsapp /> WhatsApp - Consulta Gratuita
+              <a href="https://wa.me/message/Y2BY6LNHEASPG1" target="_blank">
+                <FaWhatsapp /> WhatsApp - Consulta Gratuita
+              </a>
             </Button>
           </Flex>
         </Box>
