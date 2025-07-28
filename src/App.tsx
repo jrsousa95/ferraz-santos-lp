@@ -1,22 +1,26 @@
-import { VStack } from "@chakra-ui/react";
-import Footer from "./sections/footer";
-import Header from "./sections/header";
-import AboutUs from "./sections/about-us";
-import Presentation from "./sections/presentation-section";
-import ServicesSection from "./sections/services-section";
-import Testimonials from "./sections/testimonials";
-import UrgentOfferSection from "./sections/urgent-offer-section";
+import { Toaster } from "@/components/ui/toaster";
+import { Toaster as Sonner } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Index from "./pages/Index";
+import NotFound from "./pages/NotFound";
 
-export default function App() {
-  return (
-    <VStack align="start" gap="0">
-      <Header />
-      <Presentation />
-      <ServicesSection />
-      <AboutUs />
-      <Testimonials />
-      <UrgentOfferSection />
-      <Footer />
-    </VStack>
-  );
-}
+const queryClient = new QueryClient();
+
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </TooltipProvider>
+  </QueryClientProvider>
+);
+
+export default App;
