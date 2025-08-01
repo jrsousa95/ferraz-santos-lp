@@ -81,7 +81,7 @@ const CTASection = () => {
               >
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                   <Phone className="h-6 w-6" />
-                  WhatsApp - Consulta Gratuita
+                  Consulta Gratuita
                   <ArrowRight className="h-6 w-6" />
                 </a>
               </Button>

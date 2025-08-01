@@ -98,7 +98,13 @@ const AreasSection = () => {
                   variant="outline-professional"
                   className="w-full group-hover:bg-brand-blue group-hover:text-white transition-all duration-300 font-roboto"
                 >
-                  Ver mais
+                  <a
+                    target="_blank"
+                    href={whatsappUrl}
+                    rel="noopener noreferrer"
+                  >
+                    Ver mais
+                  </a>
                   <ArrowRight className="h-4 w-4" />
                 </Button>
               </CardContent>
