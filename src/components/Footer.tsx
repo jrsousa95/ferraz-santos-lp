@@ -24,8 +24,8 @@ const Footer = () => {
             </div>
             <p className="text-white/80 mb-6 leading-relaxed">
               Especialistas em Direito Empresarial oferecendo segurança jurídica
-              e assessoria estratégica para empresas de todos os portes no
-              Ceará.
+              e assessoria estratégica para empresas de todos os portes em todo
+              o Brasil
             </p>
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2">
@@ -72,19 +72,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-white/80">
                 <MapPin className="h-5 w-5" />
-                <span>Fortaleza</span>
+                <span>Sede em Fortaleza/CE </span>
               </div>
               <div className="flex items-center gap-3 text-white/80">
                 <MapPin className="h-5 w-5" />
-                <span>Sobral</span>
-              </div>
-              <div className="flex items-center gap-3 text-white/80">
-                <MapPin className="h-5 w-5" />
-                <span>Juazeiro do Norte</span>
-              </div>
-              <div className="flex items-center gap-3 text-white/80">
-                <MapPin className="h-5 w-5" />
-                <span>Quixadá</span>
+                <span>Atendimento em todo o Brasil</span>
               </div>
             </div>
           </div>

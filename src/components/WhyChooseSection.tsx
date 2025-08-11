@@ -36,7 +36,7 @@ const WhyChooseSection = () => {
       icon: Award,
       title: "Excelência Comprovada",
       description:
-        "Histórico de sucesso com empresas de diversos portes em todo o Ceará.",
+        "Histórico de sucesso com empresas de diversos portes em todo o Brasil.",
     },
   ];
 

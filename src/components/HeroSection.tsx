@@ -70,7 +70,7 @@ const HeroSection = () => {
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-              <span>Fortaleza, Sobral, Juazeiro, Quixadá</span>
+              <span>+200 clientes atendidos em mais de 15 estados</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-400 rounded-full"></div>
